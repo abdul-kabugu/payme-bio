@@ -86,7 +86,19 @@ const [selectedPaymentCurrency, setselectedPaymentCurrency] = useState('BNB')
 
          const {data, isLoading, error} = useMoralisQuery("profileLinks", query => query.equalTo("username", userId))
           const USER_DATA = data[0]?.attributes
-         console.log("the console from usePrams",  USER_DATA)
+          if(isLoading) {
+            return(
+              <Box w="100vw" h="100vh" display="flex" alignItems="center" justifyContent='center'>
+                <Spinner
+               thickness='4px'
+                speed='0.65s'
+               emptyColor='gray.200'
+               color='blue.500'
+                size='xl'
+/>
+              </Box>
+            )
+          }
 
          const  handleOpenTwitter = () =>  {
           window.open(USER_DATA?.twitterAccount)
