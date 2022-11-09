@@ -13,7 +13,7 @@ export default function TopNav() {
       marginX='auto' borderBottom='1px' borderBottomColor='gray.200' pos='fixed' top={0} left={0} right={0}
    >
      
-      {/*} <Text fontSize='xl' fontWeight='bold'>DebbleX</Text>*/}
+
          <Link to='/'> <Image src='/img/logo192.png'  /> </Link>
     
      

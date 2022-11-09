@@ -5,8 +5,15 @@ import {TfiShare} from 'react-icons/tfi'
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 export default function DashBoardPortal() {
   const [isLinkCopied, setisLinkCopied] = useState(false)
-    const { user} = useMoralis()
+    const { user, isAuthenticated} = useMoralis()
     const toast = useToast()
+    if(! isAuthenticated){
+      return(
+        <Box w="full" h="100vh"  display="flex" alignItems="center" justifyContent="center">
+            <Text fontSize="xl" fontWeight="semibold">Your not authenticated please connect your wallet</Text>
+        </Box>
+      )
+    }
   return (
 <Box>
     <Box h="80vh" w={{base : "100%", md : "600px"}}  display="flex" flexDirection="column" justifyContent="center" alignItems="center">
