@@ -33,7 +33,7 @@ export default function DashBoardPortal() {
     </HStack>
 
     <HStack gap={10} my={7}>
-      <Text color="gray.600" fontWeight="bold">debble.xyz/{user?.attributes?.username}</Text>
+      <Text color="gray.600" fontWeight="bold">payme.xyz/{user?.attributes?.username}</Text>
       <CopyToClipboard text={`https://payme-bio.vercel.app/${user?.attributes?.username}`}
         onCopy={() =>   
           toast({

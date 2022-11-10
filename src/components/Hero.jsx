@@ -25,7 +25,7 @@ export default function Hero() {
            </Heading>
            <Text fontSize='2xl' color='gray.500' mt={4}>
             <Highlight query='Axelar network' styles={{ px: '2', py: '1', bg: 'purple.100', rounded : 'lg' }}>
-             DebbleX is your one-stop gateway for receiving
+             Paymee is your one-stop gateway for receiving
               and making cross-chain payments powered by the Axelar network
               </Highlight>
              </Text>
@@ -43,7 +43,7 @@ export default function Hero() {
                <Box w='300px' bg='white' h='370px'  mt={71} rounded='md' py={5} px={4}>
                 <Flex alignItems='center'>
                   <HiLockClosed  style={{color : "gray", marginRight : "6px"}}/>
-                  <Text color='gray.600'>debble.xyz/filip</Text>
+                  <Text color='gray.600'>payme.xyz/filip</Text>
                 </Flex>
 
                   <Box pos='relative'>

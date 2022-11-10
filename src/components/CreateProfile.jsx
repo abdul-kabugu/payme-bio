@@ -57,7 +57,7 @@ export default function CreateProfile() {
           <Box my='5px'>
             <Text color='gray.600' my={4} mt='50px'>Display name</Text>
         <InputGroup display='flex' flexDirection='column'>
-        <InputLeftAddon children='debble.xyz/'  />
+        <InputLeftAddon children='payme.xyz/'  />
            <Input   value={userName}  onChange = {e =>  setuserName(e.target.value)} placeholder = 'User Name' colorScheme='gray'  border='1px solid' borderColor='gray.500' rounded='lg' />
             {itExists  &&  <Text fontSize='xs' color='red.500'>this name is not  available</Text>}
         </InputGroup>

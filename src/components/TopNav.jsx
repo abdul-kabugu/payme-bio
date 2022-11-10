@@ -13,8 +13,8 @@ export default function TopNav() {
       marginX='auto' borderBottom='1px' borderBottomColor='gray.200' pos='fixed' top={0} left={0} right={0}
    >
      
-
-         <Link to='/'> <Image src='/img/logo192.png'  /> </Link>
+          {/*<Image src='/img/logo192.png'  /> */}
+         <Link to='/'> <Text fontSize="2xl" fontWeight='semibold'>Payme</Text> </Link>
     
      
 
