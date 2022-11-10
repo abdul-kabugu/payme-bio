@@ -34,7 +34,7 @@ export default function DashBoardPortal() {
 
     <HStack gap={10} my={7}>
       <Text color="gray.600" fontWeight="bold">debble.xyz/{user?.attributes?.username}</Text>
-      <CopyToClipboard text={`debble.xyz/${user?.attributes?.username}`}
+      <CopyToClipboard text={`https://payme-bio.vercel.app/${user?.attributes?.username}`}
         onCopy={() =>   
           toast({
             title: 'Link copied to clipboard',
